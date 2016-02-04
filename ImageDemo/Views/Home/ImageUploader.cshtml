@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "ImageUploader";
+}
+
+<h2>ImageUploader</h2>
+@using (Html.BeginForm("Upload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-group">;
+        <label for="file" class="control-label">Select an Image</label>;
+        <input type="file" name="file" id="file" class="form-control" />
+        <br />
+        <input type="submit" value="Upload" class="btn btn-default" />
+    </div>;
+}
